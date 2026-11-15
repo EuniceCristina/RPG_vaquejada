@@ -89,8 +89,10 @@ Observação de compatibilidade: o código utiliza system("cls") para limpar a t
 projeto/
 ├── main.c
 ├── README.md
-└── personagens/              # ilustrações opcionais
+└── personagens/
+# ilustrações opcionais
+
 As imagens, quando presentes, representam os personagens e os bois das três etapas. Foram produzidas com auxílio do OpenAI ImageGen, a partir de um prompt de ilustração de RPG ambientado em uma arena de vaquejada nordestina, com vestimentas de couro, paisagem do sertão e atmosfera cinematográfica. Elas enriquecem a apresentação do projeto, mas não são necessárias para jogar no terminal.
-9. Vídeo de demonstração
+10. Vídeo de demonstração
 Demonstração da execução e das principais mecânicas: [inserir link do vídeo]
 Projeto acadêmico desenvolvido para aplicar estruturas de dados, enumerações, funções, estruturas de decisão, repetição e geração de números aleatórios na linguagem C.
