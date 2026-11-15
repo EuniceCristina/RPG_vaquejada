@@ -1,220 +1,99 @@
-VAQUEJADA RPG — O Desafio do Locutor
-Jogo de RPG em terminal, desenvolvido em linguagem C, ambientado em um circuito de vaquejada no sertão nordestino.
+Vaquejada RPG — O Desafio do Locutor
+Um jogo de RPG em linguagem C inspirado nas vaquejadas e na cultura do sertão nordestino. Entre dados, desafios e decisões, o jogador acompanha a trajetória de um competidor em busca do título de campeão do circuito.
 1. Identificação
-- Aluna: Eunice Cristina de Araújo Silva
-- Matrícula: [INSERIR MATRÍCULA]
+- Estudante: Eunice Cristina de Araújo Silva
+- Matrícula: [inserir matrícula]
 - Projeto: Vaquejada RPG — O Desafio do Locutor
+- Linguagem: C
 2. História e objetivo
-No coração do sertão, a poeira sobe, a arquibancada vibra e o locutor anuncia o início do maior circuito de vaquejada da região. O jogador escolhe um dos três vaqueiros e participa de três etapas de dificuldade crescente: Mirim, Aspirante e Profissional.
+No coração do sertão, a poeira sobe, os portões da arena se abrem e o locutor anuncia o início de um grande circuito de vaquejada. O jogador assume o papel de um vaqueiro ou vaqueira que precisa superar provas cada vez mais difíceis, administrar sua resistência e conquistar o respeito da torcida.
 
-Em cada etapa, é preciso vencer uma quantidade de desafios com bois comuns e superar o boi-chefe. O objetivo final é conquistar o título de Grande Campeão do Circuito, mantendo o personagem vivo até o encerramento da terceira etapa.
-Os bois são apresentados como desafios de resistência e reação na pista, não como criaturas sobrenaturais. Os termos “monstros” e “chefes” são usados apenas no sentido de adversários de RPG.
+A jornada é dividida em três etapas: Mirim, Aspirante e Profissional. Cada etapa apresenta bois com diferentes níveis de resistência, eventos no percurso e um desafio final contra um boi-chefe. O objetivo é completar as derrubadas exigidas, vencer o chefe de cada etapa e chegar ao fim do circuito como grande campeão.
 
+A ambientação e os diálogos do locutor fazem parte da experiência: eles apresentam os acontecimentos da pista, as conquistas e os momentos de dificuldade.
 3. Personagens jogáveis
-Atributo inicial	Vaqueiro Nym	Vaqueira Marta	Zé Relâmpago
-Classe	Equilibrado	Força	Agilidade
-Vida	110	130	95
-Ataque	12	14	9
-Força	12	14	9
-Defesa	9	12	8
-Agilidade	10	7	15
-Inteligência	6	5	8
-Bônus inicial	2	3	4
-Chance de fuga	25	20	25
-XP inicial	0	0	0
+No início da partida, o jogador escolhe um dos três competidores. Cada personagem possui atributos próprios de vida, ataque, força, defesa, agilidade, inteligência e chance de fuga, além de equipamentos e uma habilidade especial.
+Personagem	Perfil	Equipamentos	Habilidade especial
+Vaqueiro Nym	Equilibrado, com boa combinação de ataque e mobilidade	Cavalo Ventania e gibão de couro	Laço Certeiro: fortalece uma puxada contra o boi
+Vaqueira Marta	Voltada à força e à resistência	Cavalo Trovão, perneira reforçada e laço pesado	Puxada de Ferro: reduz a dificuldade do boi
+Zé Relâmpago	Ágil, com foco em velocidade e evasão	Cavalo Seta, esporas e chapéu de couro	Corrida Relâmpago: aumenta a chance de fuga
 
 
-Vaqueiro Nym — Equilibrado
-
-- Equipamentos: Cavalo Ventania e gibão de couro.
-- Habilidade especial — Laço Certeiro: realiza uma puxada com +5 no valor do ataque calculado, antes de subtrair a dificuldade do boi.
-- Perfil: personagem com atributos equilibrados para enfrentar a pista.
-Vaqueira Marta — Força
-
-- Equipamentos: Cavalo Trovão, perneira reforçada e laço pesado.
-- Habilidade especial — Puxada de Ferro: reduz em 2 pontos a dificuldade do boi (mínimo zero).
-- Perfil: possui a maior vida, ataque e defesa iniciais entre os personagens.
-Zé Relâmpago — Agilidade
-
-- Equipamentos: Cavalo Seta, esporas e chapéu de couro.
-- Habilidade especial — Corrida Relâmpago: aumenta em 10 pontos a chance de fuga.
-- Perfil: personagem com maior agilidade inicial e menor vida.
-Uso das habilidades: no código apresentado, a habilidade fica disponível uma vez por confronto, sendo reiniciada no começo de cada combate comum ou desafio de chefe. Se a implementação final foi alterada para uma vez por fase, atualizar esta regra no README.
-4. Bois, fases e missões
-Etapa 1 — Mirim
-Missão: derrubar 2 bois comuns e superar o Boi Caboclo.
-Boi	Resistência	Reação	Dificuldade	XP ao vencer
-Pintado	30	6	3	20
-Malhado	35	7	4	25
-Caboclo (chefe)	40	8	5	30
+A escolha influencia a maneira de enfrentar os desafios. Os atributos e as recompensas conquistadas são mantidos ao longo das etapas; as condições de uso das habilidades seguem o controle implementado no código.
+4. Fases e desafios
+Etapa	Bois comuns	Chefe	Objetivo
+1 — Mirim	Pintado e Malhado	Boi Caboclo	Realizar 2 derrubadas comuns e vencer o chefe
+2 — Aspirante	Corrente e Ventania	Boi Ferradura	Realizar 3 derrubadas comuns e vencer o chefe
+3 — Profissional	Tempestade e Aço	Boi Lendário Corone	Realizar 4 derrubadas comuns e vencer o chefe final
 
 
+Os bois não são monstros fantásticos: são os desafios da arena, adaptados à mecânica de RPG. Cada um tem resistência, reação, dificuldade e uma recompensa em experiência (XP). Conforme o jogador avança, os adversários se tornam mais exigentes.
+5. Como jogar
+Escolha e movimentação
+1. Execute o jogo e leia a introdução apresentada pelo locutor.
+2. Escolha um dos três personagens digitando o número correspondente.
+3. Pressione Enter quando solicitado para acompanhar a narrativa.
+4. A cada rodada, o jogo sorteia o avanço pelo tabuleiro e apresenta o evento da casa alcançada.
+5. Conclua as derrubadas necessárias e enfrente o chefe para avançar à próxima etapa.
+O tabuleiro possui 12 casas, com eventos como trechos vazios, combates, tesouros, recuperação de vida, armadilhas e o desafio do chefe. O avanço é determinado por sorteio no programa, sem que o jogador precise digitar o resultado de um dado.
+Ações durante o combate
+Quando um boi entra na pista, o jogador escolhe uma ação pelo número mostrado no menu:
+Opção	Ação	Efeito
+1	Derrubar boi	Faz uma puxada para reduzir a resistência do adversário
+2	Segurar o boi	Aumenta temporariamente a defesa do vaqueiro
+3	Usar habilidade especial	Ativa a habilidade própria do personagem, quando disponível
+4	Pular vez / tentar fuga	Faz uma tentativa de escapar do confronto
 
 
+Depois da ação, se o boi ainda tiver resistência e não houver fuga, ele reage. O jogador deve acompanhar sua vida e a resistência do boi antes de decidir o próximo movimento.
+Dados, cálculos e recompensas
+O combate usa um dado virtual de 20 faces (d20). Na puxada comum, os cálculos principais são:
+Força da puxada = d20 + ataque do vaqueiro + bônus
+Dano ao boi = máximo(1, força da puxada − dificuldade do boi)
 
-Etapa 2 — Aspirante
-Missão: derrubar 3 bois comuns e superar o Boi Ferradura.
-Boi	Resistência	Reação	Dificuldade	XP ao vencer
-Corrente	60	10	7	45
-Ventania	65	12	8	50
-Ferradura (chefe)	70	13	9	55
+Reação do boi = d20 + reação do boi
+Perda de vida = máximo(1, reação do boi − defesa do vaqueiro)
+A habilidade especial pode modificar esses efeitos. Ao vencer um boi, o jogador recebe XP; casas de tesouro podem melhorar atributos, enquanto casas de cura recuperam vida e armadilhas a reduzem. A fuga encerra a tentativa sem contar uma derrubada.
 
+Vitória: completar as derrubadas e vencer o chefe de cada uma das três etapas. Derrota: ficar com a vida zerada, encerrando a partida.
+6. Organização e construção do projeto
+O projeto foi desenvolvido em C, com uma estrutura baseada em funções para separar as responsabilidades do jogo:
+- Dados do jogo: struct Personagem guarda atributos, equipamentos e habilidade; struct Boi reúne as características de cada adversário.
+- Ações: o enum AcaoCombate identifica as opções do menu por nomes como DERRUBAR_BOI, SEGURAR_BOI, USAR_HABILIDADE e PULAR_VEZ.
+- Combate: puxadaVaqueiro(), resistenciaBoi(), habilidadeEspecial() e pularVez() processam as ações e seus resultados.
+- Progressão: combate() organiza os confrontos comuns; missao() apresenta os chefes; avancaCasa() controla a movimentação e os eventos; iniciarFase() prepara cada etapa.
+- Interface: funções como abertura(), apresentarFase(), titulo(), locutor() e esperarEnter() conduzem a narrativa no terminal.
+- Execução: main() inicializa o jogo, permite escolher o personagem e conduz as três fases.
+A divisão em funções facilita a leitura, a manutenção e a evolução do código. O projeto utiliza bibliotecas padrão como stdio.h, stdlib.h, string.h e time.h, incluindo sorteios com rand() e inicialização da sequência aleatória com srand().
+Ferramentas e recursos
+- Linguagem C: implementação das regras, estruturas de dados e lógica de jogo.
+- GCC: compilação do código-fonte.
+- Terminal: interação com menus, mensagens e comandos de entrada.
+- Git/GitHub: organização e disponibilização do projeto.
+- ChatGPT / OpenAI ImageGen: apoio à criação de ilustrações opcionais dos personagens e bois, quando incluídas no repositório.
+7. Compilação e execução
+Pré-requisito: ter o compilador GCC instalado e acessível pelo terminal. Abra o terminal na pasta em que está o arquivo main.c.
 
-
-
-
-Etapa 3 — Profissional
-Missão: derrubar 4 bois comuns e superar o Boi Lendário Corone.
-Boi	Resistência	Reação	Dificuldade	XP ao vencer
-Tempestade	100	16	12	80
-Aço	110	18	14	90
-Lendário Corone (chefe)	140	20	16	120
-
-
-
-
-
-Em combates comuns, um dos dois bois da etapa é sorteado. Assim, um mesmo boi pode aparecer em mais de um confronto.
-5. Dinâmica do jogo
-5.1. Movimentação
-O jogo utiliza um tabuleiro circular de 12 casas, armazenadas em um vetor. Em cada rodada, o jogador avança um número aleatório de 1 a 11 passos (rand() % 11 + 1). A posição acumulada determina o evento da casa em que ele parou.
-Casa exibida	Tipo	Efeito
-1	Início	Ponto de partida
-2 e 9	Vazia	Nenhum efeito adicional
-3, 5 e 8	Combate	Enfrenta um boi comum da etapa
-4 e 10	Tesouro	Recebe um bônus aleatório de atributo
-6	Cura	Recupera 50 pontos de vida
-7	Armadilha	Perde 20 pontos de vida
-11	Missão	Anuncia a aproximação do desafio final
-12	Chefe / Fim	Desafio do boi-chefe, conforme as condições implementadas
-
-
-Atenção à implementação: no arquivo analisado, a atualização da posição usa % 10 ao ultrapassar 11, embora o tabuleiro tenha 12 casas. Para percorrer corretamente as 12 posições, o cálculo deve ser *posicao = (*posicao + passos) % 12; (substituindo a soma e o if atuais). Confira também a versão final da função avancaCasa(): a missão deve ser acionada apenas quando a meta de derrubadas for cumprida e o chefe ainda não tiver sido vencido.
-5.2. Ações de combate
-O jogador escolhe uma ação pelo teclado:
-1. Derrubar boi: realiza uma puxada e reduz a resistência do adversário.
-2. Segurar o boi: aumenta temporariamente a defesa do vaqueiro em 2 pontos durante a reação daquele turno.
-3. Usar habilidade especial: executa a habilidade do personagem, se ainda disponível.
-4. Pular vez / tentar fuga: lança um dado para tentar escapar do confronto. Se falhar, o boi pode reagir.
-5.3. Fórmulas
-Puxada do vaqueiro:
-Dado = número aleatório de 1 a 20
-Ataque total = Dado + ataque do vaqueiro + bônus
-Dano ao boi = máximo(1, Ataque total - dificuldade do boi)
-Nova resistência = máximo(0, resistência anterior - dano)
-No Laço Certeiro, são adicionados mais 5 pontos ao ataque total.
-
-Reação do boi:
-Dado = número aleatório de 1 a 20
-Reação total = Dado + reação do boi
-Dano ao vaqueiro = máximo(1, Reação total - defesa do vaqueiro)
-Nova vida = máximo(0, vida anterior - dano)
-O boi só reage se ainda tiver resistência, se o personagem estiver vivo e se a fuga não tiver sido bem-sucedida.
-
-Fuga:
-Dado = número aleatório de 1 a 20
-Chance de fuga total = chanceFuga + Dado
-Fuga bem-sucedida quando o total >= 30
-Bônus de combate calculado após vitórias:
-Vida atual do vaqueiro	Bônus atribuído
-Menor que 30	5
-De 30 a 59	3
-60 ou mais	1
-
-
-O bônus é atualizado, e não somado ao bônus anterior.
-5.4. Recompensas
-Ao vencer um boi, o jogador recebe o XP definido para aquele adversário. O contador de derrubadas comuns aumenta apenas nas vitórias contra bois comuns. O chefe concede XP e marca a missão como concluída.
-
-Uma casa de tesouro sorteia uma destas recompensas:
-- +2 de força;
-- +2 de defesa;
-- +2 de agilidade;
-- +2 de inteligência.
-A cura recupera 50 pontos de vida e a armadilha retira 20 pontos. No código analisado, não existe limite máximo de vida para a cura.
-5.5. Vitória e derrota
-- Vitória na etapa: cumprir a meta de derrubadas comuns e vencer o chefe correspondente.
-- Vitória final: concluir as três etapas e receber o título de Grande Campeão do Circuito.
-- Derrota: a vida do vaqueiro chega a zero em um combate ou armadilha, encerrando a partida.
-- Fuga: não concede XP nem conta como derrubada; o jogador poderá encontrar novos desafios.
-6. Como compilar e executar
-Pré-requisitos
-- Compilador GCC instalado e acessível no terminal;
-- Terminal ou prompt de comando;
-- Arquivo-fonte main.c.
-Windows (Prompt de Comando ou PowerShell)
-Na pasta do projeto, execute:
+Windows (Prompt de Comando ou PowerShell):
 gcc main.c -o main.exe
 .\main.exe
-O jogo utiliza system("cls") para limpar a tela, comando apropriado para o terminal do Windows.
-Linux
+Linux:
 gcc main.c -o main
 ./main
-macOS
-Com as ferramentas de linha de comando e um compilador C instalados:
+macOS (com GCC ou compilador C compatível):
 cc main.c -o main
 ./main
-Adaptação para Linux/macOS: antes de executar nesses sistemas, altere limparTela() para usar system("clear") em vez de system("cls"), ou implemente uma limpeza de tela multiplataforma.
-Como jogar
-1. Execute o programa e leia a introdução do locutor.
-2. Escolha 1, 2 ou 3 para selecionar o vaqueiro.
-3. Pressione Enter nas pausas narrativas.
-4. Avance pelo tabuleiro e participe dos eventos.
-5. Nos combates, digite uma opção de 1 a 4 e pressione Enter.
-6. Conclua as derrubadas e a missão de cada fase para chegar ao título final.
-7. Estrutura do código
-O projeto utiliza estruturas, enumeração, funções, ponteiros, vetores, condicionais, laços de repetição e geração de números pseudoaleatórios.
-Elemento	Responsabilidade
-struct Personagem	Armazena nome, classe, atributos, equipamento, habilidade e XP do vaqueiro
-struct Boi	Armazena nome, resistência, reação, dificuldade e XP do boi
-enum AcaoCombate	Nomeia as quatro opções do menu: DERRUBAR_BOI, SEGURAR_BOI, USAR_HABILIDADE e PULAR_VEZ
-main()	Inicializa o jogo, permite escolher personagem e executa as três etapas
-abertura()	Apresenta a história
-apresentarFase()	Exibe a introdução e a missão de cada etapa
-iniciarFase()	Reinicia posição, contagem de derrubadas e vitória do chefe
-avancaCasa()	Controla deslocamento, casas e progressão
-combate()	Sorteia e executa confrontos com bois comuns
-missao()	Configura e executa o desafio do chefe
-puxadaVaqueiro()	Calcula a puxada e o dano ao boi
-resistenciaBoi()	Calcula a reação e o dano ao personagem
-habilidadeEspecial()	Aplica o poder especial do personagem
-pularVez()	Calcula a tentativa de fuga
-tesouro()	Sorteia um bônus de atributo
-recebeBonus()	Atualiza o bônus conforme a vida atual
-lerEscolha()	Lê opções numéricas do teclado
-esperarEnter()	Pausa a narrativa até o jogador pressionar Enter
-titulo(), linha(), locutor(), limparTela()	Exibem e organizam a interface textual
+Observação de compatibilidade: o código utiliza system("cls") para limpar a tela no Windows. Em Linux e macOS, adapte limparTela() para usar um comando compatível, como system("clear"), antes de executar.
 
-
-Observação: o enum AcaoCombate foi acrescentado posteriormente à versão do código analisada para esta documentação. Confirme que ele aparece tanto em combate() quanto em missao() no arquivo final.
-8. Estrutura de arquivos
-Vaquejada-RPG/
+8. Arquivos e ilustrações
+projeto/
 ├── main.c
 ├── README.md
-└── images/
-    ├── vaqueiro_nym.png
-    ├── vaqueira_marta.png
-    ├── ze_relampago.png
-    ├── boi_pintado.png
-    ├── boi_malhado.png
-    ├── boi_caboclo.png
-    ├── boi_corrente.png
-    ├── boi_ventania.png
-    ├── boi_ferradura.png
-    ├── boi_tempestade.png
-    ├── boi_aco.png
-    └── boi_corone.png
-9. Imagens e uso de IA
-As ilustrações foram produzidas com auxílio do ChatGPT / OpenAI ImageGen, como enriquecimento visual do projeto. Elas não substituem os requisitos técnicos de programação.
-
-Prompt utilizado (descrição do pedido):
-Criar imagens para um RPG com temática de vaquejada no sertão nordestino, em estilo de ilustração digital cinematográfica, com cores quentes e cenário de arena ao pôr do sol. Representar os vaqueiros Nym, Marta e Zé Relâmpago, seus equipamentos e habilidades, além dos bois Pintado, Malhado, Caboclo, Corrente, Ventania, Ferradura, Tempestade, Aço e Lendário Corone.
-
-As imagens individuais foram separadas a partir de uma composição visual gerada para o projeto.
-10. Vídeo de demonstração
-Link: [INSERIR LINK DO VÍDEO]
-
-O vídeo deve demonstrar a escolha do personagem, a movimentação, os eventos do tabuleiro, pelo menos um combate, o uso de habilidade especial e a progressão entre fases.
+└── images/              # ilustrações opcionais
+As imagens, quando presentes, representam os personagens e os bois das três etapas. Foram produzidas com auxílio do OpenAI ImageGen, a partir de um prompt de ilustração de RPG ambientado em uma arena de vaquejada nordestina, com vestimentas de couro, paisagem do sertão e atmosfera cinematográfica. Elas enriquecem a apresentação do projeto, mas não são necessárias para jogar no terminal.
+9. Vídeo de demonstração
+Demonstração da execução e das principais mecânicas: [inserir link do vídeo]
+Projeto acadêmico desenvolvido para aplicar estruturas de dados, enumerações, funções, estruturas de decisão, repetição e geração de números aleatórios na linguagem C.
 
 
 
