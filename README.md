@@ -14,7 +14,9 @@ No coração do sertão, a poeira sobe, os portões da arena se abrem e o locuto
 A jornada é dividida em três etapas: Mirim, Aspirante e Profissional. Cada etapa apresenta bois com diferentes níveis de resistência, eventos no percurso e um desafio final contra um boi-chefe. O objetivo é completar as derrubadas exigidas, vencer o chefe de cada etapa e chegar ao fim do circuito como grande campeão.
 
 A ambientação e os diálogos do locutor fazem parte da experiência: eles apresentam os acontecimentos da pista, as conquistas e os momentos de dificuldade.
+
 3. Personagens jogáveis
+   
 No início da partida, o jogador escolhe um dos três competidores. Cada personagem possui atributos próprios de vida, ataque, força, defesa, agilidade, inteligência e chance de fuga, além de equipamentos e uma habilidade especial.
 Personagem	Perfil	Equipamentos	Habilidade especial
 Vaqueiro Nym	Equilibrado, com boa combinação de ataque e mobilidade	Cavalo Ventania e gibão de couro	Laço Certeiro: fortalece uma puxada contra o boi
@@ -23,15 +25,22 @@ Zé Relâmpago	Ágil, com foco em velocidade e evasão	Cavalo Seta, esporas e ch
 
 
 A escolha influencia a maneira de enfrentar os desafios. Os atributos e as recompensas conquistadas são mantidos ao longo das etapas; as condições de uso das habilidades seguem o controle implementado no código.
+
 4. Fases e desafios
+   
 Etapa	Bois comuns	Chefe	Objetivo
+
 1 — Mirim	Pintado e Malhado	Boi Caboclo	Realizar 2 derrubadas comuns e vencer o chefe
+
 2 — Aspirante	Corrente e Ventania	Boi Ferradura	Realizar 3 derrubadas comuns e vencer o chefe
+
 3 — Profissional	Tempestade e Aço	Boi Lendário Corone	Realizar 4 derrubadas comuns e vencer o chefe final
 
 
 Os bois não são monstros fantásticos: são os desafios da arena, adaptados à mecânica de RPG. Cada um tem resistência, reação, dificuldade e uma recompensa em experiência (XP). Conforme o jogador avança, os adversários se tornam mais exigentes.
+
 5. Como jogar
+
 Escolha e movimentação
 1. Execute o jogo e leia a introdução apresentada pelo locutor.
 2. Escolha um dos três personagens digitando o número correspondente.
