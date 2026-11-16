@@ -48,12 +48,18 @@ Escolha e movimentação
 4. A cada rodada, o jogo sorteia o avanço pelo tabuleiro e apresenta o evento da casa alcançada.
 5. Conclua as derrubadas necessárias e enfrente o chefe para avançar à próxima etapa.
 O tabuleiro possui 12 casas, com eventos como trechos vazios, combates, tesouros, recuperação de vida, armadilhas e o desafio do chefe. O avanço é determinado por sorteio no programa, sem que o jogador precise digitar o resultado de um dado.
+
 Ações durante o combate
 Quando um boi entra na pista, o jogador escolhe uma ação pelo número mostrado no menu:
+
 Opção	Ação	Efeito
+
 1	Derrubar boi	Faz uma puxada para reduzir a resistência do adversário
+
 2	Segurar o boi	Aumenta temporariamente a defesa do vaqueiro
+
 3	Usar habilidade especial	Ativa a habilidade própria do personagem, quando disponível
+
 4	Pular vez / tentar fuga	Faz uma tentativa de escapar do confronto
 
 
@@ -68,11 +74,17 @@ Perda de vida = máximo(1, reação do boi − defesa do vaqueiro)
 A habilidade especial pode modificar esses efeitos. Ao vencer um boi, o jogador recebe XP; casas de tesouro podem melhorar atributos, enquanto casas de cura recuperam vida e armadilhas a reduzem. A fuga encerra a tentativa sem contar uma derrubada.
 
 Vitória: completar as derrubadas e vencer o chefe de cada uma das três etapas. Derrota: ficar com a vida zerada, encerrando a partida.
+
 6. Organização e construção do projeto
+   
 O projeto foi desenvolvido em C, com uma estrutura baseada em funções para separar as responsabilidades do jogo:
+
 - Dados do jogo: struct Personagem guarda atributos, equipamentos e habilidade; struct Boi reúne as características de cada adversário.
+- 
 - Ações: o enum AcaoCombate identifica as opções do menu por nomes como DERRUBAR_BOI, SEGURAR_BOI, USAR_HABILIDADE e PULAR_VEZ.
+- 
 - Combate: puxadaVaqueiro(), resistenciaBoi(), useHabilidade() e pularVez() processam as ações e seus resultados.
+- 
 - Progressão: combate() organiza os confrontos comuns; missao() apresenta os chefes; avancaCasa() controla a movimentação e os eventos; iniciarFase() prepara cada etapa.
 - Interface: funções como abertura(), apresentarFase(), titulo(), locutor() e esperarEnter() conduzem a narrativa no terminal.
 - Execução: main() inicializa o jogo, permite escolher o personagem e conduz as três fases.
@@ -83,7 +95,9 @@ Ferramentas e recursos
 - Terminal: interação com menus, mensagens e comandos de entrada.
 - Git/GitHub: organização e disponibilização do projeto.
 - ChatGPT / OpenAI ImageGen: apoio à criação de ilustrações opcionais dos personagens e bois, quando incluídas no repositório.
+- 
 7. Compilação e execução
+  
 Pré-requisito: ter o compilador GCC instalado e acessível pelo terminal. Abra o terminal na pasta em que está o arquivo main.c.
 
 Windows (Prompt de Comando ou PowerShell):
