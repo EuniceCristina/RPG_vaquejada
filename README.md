@@ -2,7 +2,7 @@ Vaquejada RPG — O Desafio do Locutor
 Um jogo de RPG em linguagem C inspirado nas vaquejadas e na cultura do sertão nordestino. Entre dados, desafios e decisões, o jogador acompanha a trajetória de um competidor em busca do título de campeão do circuito.
 1. Identificação
 - Estudante: Eunice Cristina de Araújo Silva
-- Matrícula: [inserir matrícula]
+- Matrícula: 20260011578
 - Projeto: Vaquejada RPG — O Desafio do Locutor
 - Linguagem: C
 2. História e objetivo
