@@ -6,7 +6,7 @@ Um jogo de RPG em linguagem C inspirado nas vaquejadas e na cultura do sertão n
 - Matrícula: 20260011578
 - Projeto: Vaquejada RPG — O Desafio do Locutor
 - Linguagem: C
-
+- Link vídeo : https://drive.google.com/drive/folders/1f-IS815VNDVQHElQsoToELK8vJC3VvvX
   
 2. História e objetivo
 
