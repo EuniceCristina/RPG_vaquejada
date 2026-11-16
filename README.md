@@ -80,11 +80,8 @@ Vitória: completar as derrubadas e vencer o chefe de cada uma das três etapas.
 O projeto foi desenvolvido em C, com uma estrutura baseada em funções para separar as responsabilidades do jogo:
 
 - Dados do jogo: struct Personagem guarda atributos, equipamentos e habilidade; struct Boi reúne as características de cada adversário.
-- 
 - Ações: o enum AcaoCombate identifica as opções do menu por nomes como DERRUBAR_BOI, SEGURAR_BOI, USAR_HABILIDADE e PULAR_VEZ.
-- 
 - Combate: puxadaVaqueiro(), resistenciaBoi(), useHabilidade() e pularVez() processam as ações e seus resultados.
-- 
 - Progressão: combate() organiza os confrontos comuns; missao() apresenta os chefes; avancaCasa() controla a movimentação e os eventos; iniciarFase() prepara cada etapa.
 - Interface: funções como abertura(), apresentarFase(), titulo(), locutor() e esperarEnter() conduzem a narrativa no terminal.
 - Execução: main() inicializa o jogo, permite escolher o personagem e conduz as três fases.
@@ -95,7 +92,6 @@ Ferramentas e recursos
 - Terminal: interação com menus, mensagens e comandos de entrada.
 - Git/GitHub: organização e disponibilização do projeto.
 - ChatGPT / OpenAI ImageGen: apoio à criação de ilustrações opcionais dos personagens e bois, quando incluídas no repositório.
-- 
 7. Compilação e execução
   
 Pré-requisito: ter o compilador GCC instalado e acessível pelo terminal. Abra o terminal na pasta em que está o arquivo main.c.
@@ -114,9 +110,13 @@ Observação de compatibilidade: o código utiliza system("cls") para limpar a t
 8. Arquivos e ilustrações
 projeto/
 ├── main.c
+
 ├── README.md
+
 └── personagens/
+
 # ilustrações opcionais
+
 
 As imagens, quando presentes, representam os personagens e os bois das três etapas. Foram produzidas com auxílio do OpenAI ImageGen, a partir de um prompt de ilustração de RPG ambientado em uma arena de vaquejada nordestina, com vestimentas de couro, paisagem do sertão e atmosfera cinematográfica. Elas enriquecem a apresentação do projeto, mas não são necessárias para jogar no terminal.
 10. Vídeo de demonstração
